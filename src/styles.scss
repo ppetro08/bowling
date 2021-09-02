@@ -1,0 +1,61 @@
+.frame-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  margin: 0 auto;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 20px;
+  height: 102px;
+}
+
+.frame,
+.final-score {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 1px solid black;
+  &:last-of-type {
+    border-right: none;
+  }
+
+  .frame-header {
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  .frame-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .frame-roll,
+    .frame-running-total {
+      flex: 1;
+    }
+
+    .frame-running-total {
+      text-align: center;
+      padding: 4px 0;
+    }
+  }
+}
+
+.frame-roll {
+  display: flex;
+  .roll-frame,
+  .bordered-roll-frame {
+    flex: 1 0;
+    text-align: center;
+  }
+  .bordered-roll-frame {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.total {
+  font-size: 30px;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}

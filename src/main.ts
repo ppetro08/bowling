@@ -1,6 +1,8 @@
-import {Aurelia} from 'aurelia-framework';
+import { Aurelia } from 'aurelia-framework';
+import { PLATFORM } from 'aurelia-pal';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
 import * as environment from '../config/environment.json';
-import {PLATFORM} from 'aurelia-pal';
 
 export function configure(aurelia: Aurelia): void {
   aurelia.use

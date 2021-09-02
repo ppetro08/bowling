@@ -1,0 +1,18 @@
+<template>
+  <require from="./frame-roll"></require>
+  <div class="frame-container">
+    <div class="frame" repeat.for="frame of frames">
+      <div class="frame-header">${$index + 1}</div>
+      <div class="frame-body">
+        <frame-roll frame.bind="frame"></frame-roll>
+        <div class="frame-running-total">${frame.runningTotal}</div>
+      </div>
+    </div>
+    <div class="final-score">
+      <div class="frame-header">Total</div>
+      <div class="frame-body total">
+        ${frames[frames.length - 1].runningTotal}
+      </div>
+    </div>
+  </div>
+</template>

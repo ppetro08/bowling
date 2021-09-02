@@ -1,3 +1,5 @@
 <template>
-  <h1>${message}</h1>
+  <require from="./bowling/bowling-frame-container"></require>
+  <h1>Bowling!</h1>
+  <bowling-frame-container frames.bind="staticFrames"></bowling-frame-container>
 </template>
